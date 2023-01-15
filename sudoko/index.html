@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sudoku</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+    <div id="login">
+        <h3 class="login_header">SUDOKU</h3>
+        <input class="login_input" type="text" placeholder="user-name">
+        <input class="login_input" type="text" placeholder="password">
+        <button class="login_button">ENTER</button>
+    </div>
+    <div id="game">
+        <div id="level">
+            <h3 class="levels_header">choose level!</h3>
+            <div id="levels_choose">
+                <img class="level_icn" src="img/level1.png" onclick="levelStart(1)">
+                <img class="level_icn" src="img/level2.png" onclick="levelStart(2)">
+                <img class="level_icn" src="img/level3.png" onclick="levelStart(3)">
+            </div>
+        </div>
+        <div id="move_to_play">
+            <img id="count" src="img/one.png">
+        </div>
+        <div id="play">
+            <h3 id="play_level"></h3>
+            <div id="game_board">
+                <table id="board">
+                </table>
+            </div>
+            <div id="game_buttons">
+                <img class="game_icn" src="img/finish.png" alt="finish">
+                <img class="game_icn" src="img/again.jpg" alt="again">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
